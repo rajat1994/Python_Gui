@@ -1,4 +1,4 @@
-import simpleguitk
+import simpleguitk as sk
 
 # define global variables
 global count, min, sec, x, y
@@ -65,10 +65,10 @@ def draw_handler(canvas):
     canvas.draw_text(str(x)+"/"+str(y), (170,30), 20, "Green")
 
 # create frame
-frame = simpleguitk.create_frame("Stopwatch:The Game",200,200)
+frame = sk.create_frame("Stopwatch:The Game",200,200)
 
 # register event handlers
-timer = simpleguitk.create_timer(100,timer_handler)
+timer = sk.create_timer(100,timer_handler)
 frame.add_button("Start",start_timer,100)
 frame.add_button("Stop",stop_timer,100)
 frame.add_button("Reset",reset_timer,100)
